@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="httpS://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+<script>
+$(document).ready(function(){
+	$('main a').hover(function(){
+		alert("sign up for weeky newsletter and tips for web development!"); });
+});
+</script>
+<title>Newsletter</title>
+<meta charset="utf-8">
+<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+<link href="homepage.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+<header>
+  <h1>Newsletter</h1>
+</header>
+<nav>
+<ul>
+         <li> <a href="index.html">Home</a></li>
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+</ul>
+</nav>
+<main>
+<div id="newsletter">
+ </div>
+ <h2>Sign Up Here</h2>
+<p>Want to get weeky <a href="#">newsletter </a> and tips for web development? Fill out the form below to subscribe our newsletter and get tips. Required fields are marked with an asterisk (*). </p>
+
+<fieldset>
+<legend>Form Starts Here</legend>
+ <form method="post" action="mailto:tnguyen0289@student.palomar.edu">
+<label for="myName">*Name:</label>
+  <input type="text" name="myName" id="myName"
+  required="required" >
+<label for="myEmail">*E-mail:</label>
+  <input type="email" name="myEmail" id="myEmail"
+  required="required" >
+<p>Experience:</p>
+<div id="myExperience">
+  <input type="radio" name="myExperience" id="junior" value="Junior">Less than or equal to 3 years<br>
+  <input type="radio" name="myExperience" id="senior" value ="Senior">Over than 3 years<br><br>
+</div>
+<label for="myTopic">Topic:</label>
+ <select size ="1" name="myTopic" id="myTopic">
+ <option>Select a topic to ask</option>
+<option value="HTML">HTML</option>
+<option value="CSS">CSS</option>
+<option value="JavaScript">JavaScript</option>
+ </select>
+  <label for="myQuestion">*Question:</label>
+  <textarea name="myQuestion" id="myQuestion" rows="5" cols="40"     required="required"></textarea>
+<input id="mySubmit" type="image" src="submit_button.jpg" alt="Submit Button">
+</form>
+</fieldset>
+
+</main>
+<footer>
+  Copyright &copy; 2019 Thuy Tien Nguyen
+ <div>This page was last modified on date:
+   <script>
+            document.write(document.lastModified);
+    </script>
+ </div>
+</footer>
+</div>
+</body>
+</html>
